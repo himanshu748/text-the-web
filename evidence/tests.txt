@@ -1,0 +1,305 @@
+
+> text-the-web@0.1.0 test
+> tsx --test tests/*.test.ts
+
+TAP version 13
+# (node:44627) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: help responds without using research
+ok 1 - help responds without using research
+  ---
+  duration_ms: 33.852625
+  ...
+# Subtest: URL question routes to research and one context follow-up; third needs new URL
+ok 2 - URL question routes to research and one context follow-up; third needs new URL
+  ---
+  duration_ms: 10.686917
+  ...
+# Subtest: duplicate IDs concurrently produce exactly one research and one reply
+ok 3 - duplicate IDs concurrently produce exactly one research and one reply
+  ---
+  duration_ms: 2.941541
+  ...
+# Subtest: dedup and uncertain send persist across restarts; no automatic resend
+ok 4 - dedup and uncertain send persist across restarts; no automatic resend
+  ---
+  duration_ms: 19.073625
+  ...
+# Subtest: outbound, unknown conversation and unknown sender ignored
+ok 5 - outbound, unknown conversation and unknown sender ignored
+  ---
+  duration_ms: 1.001416
+  ...
+# Subtest: rate and lifetime budget enforced before provider calls
+ok 6 - rate and lifetime budget enforced before provider calls
+  ---
+  duration_ms: 4.590791
+  ...
+# Subtest: timeouts abort provider and give a clear reply
+ok 7 - timeouts abort provider and give a clear reply
+  ---
+  duration_ms: 23.469625
+  ...
+# Subtest: clear credentials failure, no raw error
+ok 8 - clear credentials failure, no raw error
+  ---
+  duration_ms: 3.989334
+  ...
+# Subtest: clear blocked failure, no raw error
+ok 9 - clear blocked failure, no raw error
+  ---
+  duration_ms: 1.500333
+  ...
+# Subtest: clear credits failure, no raw error
+ok 10 - clear credits failure, no raw error
+  ---
+  duration_ms: 2.3135
+  ...
+# Subtest: clear unavailable failure, no raw error
+ok 11 - clear unavailable failure, no raw error
+  ---
+  duration_ms: 5.201375
+  ...
+# Subtest: side effects and multiple URLs rejected without research
+ok 12 - side effects and multiple URLs rejected without research
+  ---
+  duration_ms: 1.491
+  ...
+# Subtest: expired context gives no research
+ok 13 - expired context gives no research
+  ---
+  duration_ms: 1.268791
+  ...
+# Subtest: Spectrum routing preserves IDs, sender, platform, direction; nontext ignored
+ok 14 - Spectrum routing preserves IDs, sender, platform, direction; nontext ignored
+  ---
+  duration_ms: 1.778209
+  ...
+# Subtest: uncertain send deadline does not retry on late completion or duplicate
+ok 15 - uncertain send deadline does not retry on late completion or duplicate
+  ---
+  duration_ms: 8.407625
+  ...
+# Subtest: official SDK uses bounded documented routes, instant mode, no retries
+ok 16 - official SDK uses bounded documented routes, instant mode, no retries
+  ---
+  duration_ms: 72.816459
+  ...
+# Subtest: expired key maps to credentials and makes one HTTP attempt
+ok 17 - expired key maps to credentials and makes one HTTP attempt
+  ---
+  duration_ms: 4.771084
+  ...
+# Subtest: 503 not retried
+ok 18 - 503 not retried
+  ---
+  duration_ms: 1.857875
+  ...
+# Subtest: website challenge fails closed
+ok 19 - website challenge fails closed
+  ---
+  duration_ms: 9.432958
+  ...
+# Subtest: website timeout fails closed
+ok 20 - website timeout fails closed
+  ---
+  duration_ms: 6.706167
+  ...
+# Subtest: unsafe redirect fails closed
+ok 21 - unsafe redirect fails closed
+  ---
+  duration_ms: 2.559667
+  ...
+# Subtest: no citations fails closed
+ok 22 - no citations fails closed
+  ---
+  duration_ms: 4.372709
+  ...
+# Subtest: unsafe source fails closed
+ok 23 - unsafe source fails closed
+  ---
+  duration_ms: 35.410792
+  ...
+# Subtest: enabled auto-reload fails closed
+ok 24 - enabled auto-reload fails closed
+  ---
+  duration_ms: 20.557959
+  ...
+# Subtest: unknown auto-reload fails closed
+ok 25 - unknown auto-reload fails closed
+  ---
+  duration_ms: 5.6705
+  ...
+# Subtest: pending top-up fails closed
+ok 26 - pending top-up fails closed
+  ---
+  duration_ms: 3.252375
+  ...
+# Subtest: bounded polling exhaustion makes one cancellation attempt
+ok 27 - bounded polling exhaustion makes one cancellation attempt
+  ---
+  duration_ms: 7.981
+  ...
+# Subtest: SDK cancellation prevents research creation after interrupted fetch
+ok 28 - SDK cancellation prevents research creation after interrupted fetch
+  ---
+  duration_ms: 40.36675
+  ...
+# Subtest: SDK key serialization redacts credentials
+ok 29 - SDK key serialization redacts credentials
+  ---
+  duration_ms: 0.959333
+  ...
+# Subtest: tracked package safety patches disable internal send retries
+ok 30 - tracked package safety patches disable internal send retries
+  ---
+  duration_ms: 6.565042
+  ...
+# (node:44629) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: native send diagnostics classify nested failures without exposing private error text
+ok 31 - native send diagnostics classify nested failures without exposing private error text
+  ---
+  duration_ms: 1.383667
+  ...
+# Subtest: only explicit fresh self commands are routed; peer/SMS/system/other chat/old rows rejected
+ok 32 - only explicit fresh self commands are routed; peer/SMS/system/other chat/old rows rejected
+  ---
+  duration_ms: 0.546417
+  ...
+# Subtest: self send confirms only from observed native DB row; own reply never enters command stream
+ok 33 - self send confirms only from observed native DB row; own reply never enters command stream
+  ---
+  duration_ms: 7.533041
+  ...
+# Subtest: lost native send acknowledgment becomes uncertain without another dispatch
+ok 34 - lost native send acknowledgment becomes uncertain without another dispatch
+  ---
+  duration_ms: 6.8925
+  ...
+# Subtest: bounded SDK query observes native creation missed by the ROWID watcher without resending
+ok 35 - bounded SDK query observes native creation missed by the ROWID watcher without resending
+  ---
+  duration_ms: 7.064166
+  ...
+# Subtest: accepted native creation is confirmed separately from sent flags; rejected dispatch never confirms
+ok 36 - accepted native creation is confirmed separately from sent flags; rejected dispatch never confirms
+  ---
+  duration_ms: 1.063125
+  ...
+# Subtest: real Spectrum routing + real engine process one native fixture command and suppress bot loop
+ok 37 - real Spectrum routing + real engine process one native fixture command and suppress bot loop
+  ---
+  duration_ms: 19.564209
+  ...
+# (node:44630) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: HTTP sandbox exercises help, research, duplicate, URL blocking, body/CSRF/Origin restrictions
+ok 38 - HTTP sandbox exercises help, research, duplicate, URL blocking, body/CSRF/Origin restrictions
+  ---
+  duration_ms: 416.743708
+  ...
+# Subtest: valid public HTTPS normalized
+ok 39 - valid public HTTPS normalized
+  ---
+  duration_ms: 5.210792
+  ...
+# Subtest: blocks unsafe URL http://example.com/
+ok 40 - blocks unsafe URL http://example.com/
+  ---
+  duration_ms: 7.226167
+  ...
+# Subtest: blocks unsafe URL file:///etc/passwd
+ok 41 - blocks unsafe URL file:///etc/passwd
+  ---
+  duration_ms: 0.2915
+  ...
+# Subtest: blocks unsafe URL https://user:pass@example.com/
+ok 42 - blocks unsafe URL https://user:pass@example.com/
+  ---
+  duration_ms: 0.230209
+  ...
+# Subtest: blocks unsafe URL https://example.com:8080/
+ok 43 - blocks unsafe URL https://example.com:8080/
+  ---
+  duration_ms: 4.164959
+  ...
+# Subtest: blocks unsafe URL https://example.com/?key=secret
+ok 44 - blocks unsafe URL https://example.com/?key=secret
+  ---
+  duration_ms: 0.540417
+  ...
+# Subtest: blocks unsafe URL https://example.com/\#token
+ok 45 - blocks unsafe URL https://example.com/\#token
+  ---
+  duration_ms: 0.716875
+  ...
+# Subtest: blocks unsafe URL https://localhost/
+ok 46 - blocks unsafe URL https://localhost/
+  ---
+  duration_ms: 0.66275
+  ...
+# Subtest: blocks unsafe URL https://metadata.google.internal/
+ok 47 - blocks unsafe URL https://metadata.google.internal/
+  ---
+  duration_ms: 1.966167
+  ...
+# Subtest: blocks unsafe URL https://127.0.0.1/
+ok 48 - blocks unsafe URL https://127.0.0.1/
+  ---
+  duration_ms: 2.110584
+  ...
+# Subtest: blocks unsafe URL https://2130706433/
+ok 49 - blocks unsafe URL https://2130706433/
+  ---
+  duration_ms: 1.036083
+  ...
+# Subtest: blocks unsafe URL https://0x7f000001/
+ok 50 - blocks unsafe URL https://0x7f000001/
+  ---
+  duration_ms: 0.244667
+  ...
+# Subtest: blocks unsafe URL https://[::1]/
+ok 51 - blocks unsafe URL https://[::1]/
+  ---
+  duration_ms: 0.1485
+  ...
+# Subtest: blocks unsafe URL https://192.168.1.1/
+ok 52 - blocks unsafe URL https://192.168.1.1/
+  ---
+  duration_ms: 0.141959
+  ...
+# Subtest: blocks unsafe URL https://169.254.169.254/
+ok 53 - blocks unsafe URL https://169.254.169.254/
+  ---
+  duration_ms: 0.139166
+  ...
+# Subtest: blocks unsafe URL https://example.local/
+ok 54 - blocks unsafe URL https://example.local/
+  ---
+  duration_ms: 0.09275
+  ...
+# Subtest: blocks unsafe URL https://example.com\\@127.0.0.1/
+ok 55 - blocks unsafe URL https://example.com\\@127.0.0.1/
+  ---
+  duration_ms: 0.102625
+  ...
+# Subtest: DNS private addresses and mixed public/private answers blocked
+ok 56 - DNS private addresses and mixed public/private answers blocked
+  ---
+  duration_ms: 9.302792
+  ...
+# Subtest: nonpublic IPv4/IPv6 ranges
+ok 57 - nonpublic IPv4/IPv6 ranges
+  ---
+  duration_ms: 1.672584
+  ...
+1..57
+# tests 57
+# suites 0
+# pass 57
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3445.649917

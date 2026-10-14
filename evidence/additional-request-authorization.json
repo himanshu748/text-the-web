@@ -1,0 +1,13 @@
+{
+  "checkedAtUTC": "2026-10-14T13:08:18.214Z",
+  "code": "existing_credit_safeguards_passed",
+  "balancePositive": true,
+  "autoReloadState": "unconfigured",
+  "pendingTopUp": false,
+  "approvedAdditionalResearchRequests": 2,
+  "nativeLifetimeLimit": 5,
+  "priorNativeReservations": 3,
+  "provenance": "Existing promotional credits authorized by user; wallet endpoint does not independently prove provenance",
+  "researchRequestsMade": 0,
+  "purchasesOrTopUpsMade": 0
+}

@@ -1,0 +1,93 @@
+{
+  "checkedAtUTC": "2026-10-14T13:17:12.012046+00:00",
+  "stage": "two_research_results_observed_and_ipad_receipt_user_confirmed",
+  "additionalResearchAuthorized": 2,
+  "priorNativeReservations": 3,
+  "nativeLifetimeCap": 5,
+  "nativeReservationsNow": 5,
+  "additionalReservationsConsumed": 2,
+  "remainingAdditionalAllowance": 0,
+  "runtime": {
+    "adapterRevision": "native-creation-v2",
+    "applicationRevision": "research-guards-v3",
+    "startedAt": "2026-10-14T13:09:08.753Z"
+  },
+  "walletSafeguards": "additional-request-authorization.json",
+  "offlineConsoleAllowanceUnchanged": true,
+  "ipadHelpVerified": true,
+  "ipadResearchVerified": true,
+  "nativeFollowupSuccessVerified": true,
+  "newDeviceEvidence": "User-observed iPad help round trip and receipt of both research answers; Mac UI separately observed by assistant",
+  "purchasesOrTopUps": 0,
+  "publicationOrSubmission": false,
+  "ipadHelpEvidence": "User reports sending /web help on iPad and receiving reply; new native sent/ok receipt and Mac UI corroborate command/reply. No iPad screenshot or recording supplied.",
+  "tests": [
+    {
+      "kind": "url_question",
+      "origin": "Mac Messages UI controlled by assistant in paired self-chat",
+      "request": "/web https://example.com/ What is this domain used for?",
+      "receiptIdHash": "5f3a28287ac03b4b5b120a4a5b0df81f57e470fe2f7a33e724df0188a7cacc4e",
+      "state": "sent",
+      "code": "ok",
+      "createdMs": 1791983601088,
+      "answerObservedInMacMessages": "The domain example.com is used in illustrative examples in documents, and no prior permission is needed to use it for that purpose. It is not a real service, so it should not be relied upon for testing or monitoring.",
+      "sources": [
+        "https://example.com/"
+      ],
+      "sendDiagnostic": {
+        "code": "native_outgoing_row_observed",
+        "dispatchAccepted": true,
+        "queriedRows": 0,
+        "exactBodyRows": 0,
+        "eligibleCreatedRows": 0,
+        "nativeMarkedSent": false,
+        "nativeRowIdHash": "d5d8c519d2b54d6e31bdf3ccb3c42041a4a0333296d3980fc61cb845d186e87b",
+        "observedAt": "2026-10-14T13:13:32.090Z"
+      },
+      "ipadReceipt": "User confirmed visible with source link"
+    },
+    {
+      "kind": "url_free_followup",
+      "origin": "Mac Messages UI controlled by assistant in paired self-chat",
+      "request": "/web Do I need permission to use it in documentation?",
+      "receiptIdHash": "14ec1dad32651043e5d334ecf13e175315c734b51c15041ddbb45347e9b892d7",
+      "state": "send_uncertain",
+      "code": "ok",
+      "createdMs": 1791983687619,
+      "previousUrl": "https://example.com/",
+      "answerObservedInMacMessages": "No, you do not need permission to use the Example Domain (example.com) in documentation. The page explicitly states: \"This domain is for use in documentation examples without needing permission.\"",
+      "sources": [
+        "https://example.com/"
+      ],
+      "ipadReceipt": "User confirmed visible with source link",
+      "sendDiagnostic": {
+        "code": "messages_send_timeout",
+        "dispatchAccepted": true,
+        "queriedRows": 1,
+        "exactBodyRows": 1,
+        "eligibleCreatedRows": 0,
+        "observedAt": "2026-10-14T13:15:12.695Z"
+      }
+    }
+  ],
+  "ipadResearchEvidence": "User explicitly reports both new research replies and source links visible on iPad. No iPad screenshot or recording supplied.",
+  "nativeFollowupProviderAckConfirmed": false,
+  "remainingContextFollowups": 0,
+  "noResendAfterUncertainAck": true,
+  "screenshot": {
+    "path": "evidence/native-followup-redacted.png",
+    "sha256": "1e96fc465d8edeff2653a723ea980ffa866679b2286f1e35df4ab16f4a125cb5",
+    "privateSourceSha256": "2fe87684401418f55a741b14c9fe8dd6bfceff154340a92ad1929e37d984b667",
+    "cropPixels": {
+      "x": 680,
+      "y": 350,
+      "width": 1368,
+      "height": 1186
+    },
+    "description": "Genuine Mac Messages screenshot; sidebar/account header and older upper messages excluded. First new answer, URL-free follow-up and follow-up answer preserved. No message pixels fabricated.",
+    "sourceDimensions": [
+      2048,
+      1536
+    ]
+  }
+}

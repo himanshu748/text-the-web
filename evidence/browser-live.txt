@@ -1,0 +1,17 @@
+GENUINE TINYFISH RESEARCH — OFFLINE BROWSER TRANSPORT, NOT iMESSAGE PROOF
+YOU · SANDBOX
+https://example.com/ Do I need permission to use this domain in documentation?
+TEXT THE WEB · RESEARCH
+No, you do not need permission to use this domain in documentation. The page explicitly states: "This domain is for use in documentation examples without needing permission." However, it is not a service, so you should avoid relying on it for testing or monitoring purposes.
+
+Sources:
+https://example.com/
+TEXT THE WEB · EVENT STATUS
+Duplicate event ignored. No second research call or reply.
+YOU · SANDBOX
+What should I avoid relying on this domain for?
+TEXT THE WEB · RESEARCH
+According to the page, you should avoid relying on example.com for testing and monitoring purposes. It is intended solely for use in documentation examples, not as a live service.
+
+Sources:
+https://example.com/

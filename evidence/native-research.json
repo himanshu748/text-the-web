@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-12T18:08:40.559018+00:00",
+  "transport": "actual Mac same-account iMessage self-chat",
+  "researchQuestion": "https://example.com/ What is this website for, and may I use it in documentation?",
+  "researchRequestsUsed": 1,
+  "receipts": [
+    {
+      "state": "send_uncertain",
+      "code": "ok",
+      "count": 3
+    }
+  ],
+  "answerVisibleInMessages": true,
+  "sourceLinkVisible": "https://example.com/",
+  "sendDiagnostic": {
+    "code": "messages_send_timeout",
+    "dispatchAccepted": true,
+    "observedAt": "2026-10-12T18:06:11.075Z"
+  },
+  "ackFixLoadedForThisRun": false,
+  "videoRecorded": false,
+  "deviceBoundary": "Mac self-chat only; iPad delivery not independently verified",
+  "screenshot": "native-research-redacted.png",
+  "redaction": "Opaque masks only; no message content inserted or replaced"
+}

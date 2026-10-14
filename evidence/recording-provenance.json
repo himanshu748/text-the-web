@@ -1,0 +1,80 @@
+{
+  "capturedAtUTC": "2026-10-12T18:23:13Z",
+  "captureMethod": "macOS built-in screencapture video, Messages window ID 301; existing recording permission, no new grant",
+  "audioCaptured": false,
+  "transport": "real Mac Messages same-account developer self-chat",
+  "assets": [
+    {
+      "path": "evidence/private/native-session.mov",
+      "sha256": "d6f5a0abbdd011b00144783ece1bebae1ce9161998e11e99ea9ef7bc06246a22",
+      "durationSeconds": 140.063333,
+      "sizeBytes": 49030196,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 2048,
+          "height": 1536
+        }
+      ],
+      "private": true
+    },
+    {
+      "path": "evidence/native-session-redacted.mp4",
+      "sha256": "d38d552a692a02b420fe8c7658eef889d25b03a4b88f2ed5af1c264fc63a5123",
+      "durationSeconds": 140.066667,
+      "sizeBytes": 5084736,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1368,
+          "height": 1366
+        }
+      ],
+      "private": false
+    },
+    {
+      "path": "evidence/demo-imessage-60s.mp4",
+      "sha256": "1fd15d4dd2dcc397107bff311ad18381db35227c5556c51f5e9615b09dc56351",
+      "durationSeconds": 60.0,
+      "sizeBytes": 3498503,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1368,
+          "height": 1462
+        }
+      ],
+      "private": false
+    }
+  ],
+  "redaction": {
+    "cropPixels": {
+      "x": 680,
+      "y": 170,
+      "width": 1368,
+      "height": 1366
+    },
+    "removed": "Only sidebar and account header; full conversation pane and complete message widths preserved",
+    "revision": "Corrected excessive horizontal/vertical crop after user feedback"
+  },
+  "shortDemo": {
+    "sourceIntervalsSeconds": [
+      [
+        20,
+        65
+      ],
+      [
+        121,
+        136
+      ]
+    ],
+    "annotations": "Captions outside the original UI; second segment explicitly labeled later in the same recording",
+    "researchLatencyAltered": false
+  },
+  "limitations": [
+    "No iPad delivery verification",
+    "No separate peer or managed cloud identity",
+    "Follow-up attempt after recording received provider rate/quota failure"
+  ],
+  "publishingPerformed": false
+}

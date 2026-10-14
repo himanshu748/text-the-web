@@ -1,0 +1,25 @@
+{
+  "checkedAtUTC": "2026-10-14T13:04:26Z",
+  "scope": "Local hardening and source/evidence handoff, newer than the native recording",
+  "tests": {"passed": 88, "failed": 0, "skipped": 0, "evidence": "release-tests.txt"},
+  "typecheck": {"passed": true, "evidence": "release-typecheck.txt"},
+  "build": {"passed": true, "evidence": "release-build.txt"},
+  "providerResponses": "Synthetic fixtures; no live TinyFish requests",
+  "nativeMessagesSent": 0,
+  "creditsConsumedByThisPass": 0,
+  "existingLiveAllowancesReset": false,
+  "changes": [
+    "Live-check honors the configured request cap",
+    "Lifetime budget reply no longer promises a daily reset",
+    "Provider HTTP 429 has a distinct rate/quota-limit reply",
+    "Wallet gate requires a finite positive decimal-string balance",
+    "Answer prose strips HTTP(S) links regardless of case and scheme-relative links",
+    "Successful answers discussing CAPTCHA/login are not mistaken for blocked retrieval"
+  ],
+  "liveLimitationsUnchanged": [
+    "Native follow-up success unverified after earlier HTTP 429",
+    "iPad input and delivery unverified",
+    "Both original adapter research allowances exhausted"
+  ],
+  "publicationOrSubmissionPerformed": false
+}

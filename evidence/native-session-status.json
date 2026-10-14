@@ -1,0 +1,45 @@
+{
+  "checkedAtUTC": "2026-10-12T18:35:05.163809+00:00",
+  "stage": "verification_finished_research_cap_reached",
+  "adapterRevision": "native-creation-v2",
+  "nativeResearchAttempts": 3,
+  "nativeResearchSuccesses": 2,
+  "nativeFollowup": "Provider rate/quota failure mapped from HTTP 429; request reservation consumed, no retry",
+  "nativeProviderCreationConfirmed": true,
+  "receipts": [
+    {
+      "state": "send_uncertain",
+      "code": "ok",
+      "count": 4
+    },
+    {
+      "state": "sent",
+      "code": "blocked_url",
+      "count": 1
+    },
+    {
+      "state": "sent",
+      "code": "budget",
+      "count": 1
+    },
+    {
+      "state": "sent",
+      "code": "ok",
+      "count": 2
+    }
+  ],
+  "newResearchAllowanceRemaining": 0,
+  "oldUncertainReceiptsRetained": true,
+  "lastNativeSendDiagnostic": {
+    "code": "native_outgoing_row_observed",
+    "dispatchAccepted": true,
+    "queriedRows": 0,
+    "exactBodyRows": 0,
+    "eligibleCreatedRows": 0,
+    "nativeMarkedSent": false,
+    "nativeRowIdHash": "7ffdac95da0658e242a09686ddcbaffd6716da46279457cc5402fd67a8005c8b",
+    "observedAt": "2026-10-12T18:26:29.018Z"
+  },
+  "video": "demo-imessage-60s.mp4",
+  "fullTimingVideo": "native-session-redacted.mp4"
+}

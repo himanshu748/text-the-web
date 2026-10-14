@@ -1,0 +1,38 @@
+
+> text-the-web@0.1.0 demo
+> tsx scripts/demo.ts
+
+(node:10123) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+OFFLINE TERMINAL SIMULATION — fixture research; NOT iMessage or live TinyFish proof.
+
+TEST INPUT: help
+OFFLINE REPLY: Text the Web: send one public HTTPS URL followed by a question. I return a concise answer with sources. Ask one follow-up within 15 minutes using that same page. Research only; no purchases, bookings, logins, or account changes. Send help anytime.
+OUTCOME: { state: 'sent', code: 'ok' }
+
+TEST INPUT: https://example.com/ What is the purpose of this domain?
+OFFLINE REPLY: [OFFLINE FIXTURE — no live research]
+Example Domain is used for illustrative examples in documents. This answer is a test fixture; TinyFish was not called.
+
+Sources:
+https://example.com/
+OUTCOME: { state: 'sent', code: 'ok' }
+
+TEST INPUT: https://example.com/ What is the purpose of this domain?
+OUTCOME: { state: 'duplicate' }
+
+TEST INPUT: Can I use the example domain in documents?
+OFFLINE REPLY: [OFFLINE FIXTURE — no live research]
+Example Domain is used for illustrative examples in documents. This answer is a test fixture; TinyFish was not called.
+
+Sources:
+https://example.com/
+OUTCOME: { state: 'sent', code: 'ok' }
+
+TEST INPUT: What else can I use it for?
+OFFLINE REPLY: Send a public HTTPS URL and a question first. I support one follow-up within 15 minutes.
+OUTCOME: { state: 'sent', code: 'followup' }
+
+TEST INPUT: https://127.0.0.1/ What is here?
+OFFLINE REPLY: That URL is blocked by the public-web safety policy. Try a public HTTPS page.
+OUTCOME: { state: 'sent', code: 'blocked_url' }

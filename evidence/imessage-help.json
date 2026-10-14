@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-12T17:53:05.439434+00:00",
+  "transport": "actual Mac same-account iMessage self-chat",
+  "pairing": "actual native conversation observed and stored privately",
+  "receipts": [
+    {
+      "state": "send_uncertain",
+      "code": "ok",
+      "count": 1
+    }
+  ],
+  "researchRequestsUsed": 0,
+  "replyVisibleInMessages": true,
+  "terminalMessagesAutomationEnabled": true,
+  "endToEndResearchVerified": false,
+  "uncertainEventWillNotBeRetried": true,
+  "observedAfterSendTimeout": true,
+  "diagnosticBeforeAckFix": {
+    "code": "messages_send_timeout",
+    "dispatchAccepted": true,
+    "observedAt": "2026-10-12T17:55:38.317Z"
+  },
+  "screenshot": "native-help-redacted.png",
+  "redaction": "Native screenshot only; opaque masks cover sidebar and header. No message content was inserted or replaced."
+}

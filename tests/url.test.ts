@@ -1,0 +1,6 @@
+import { test } from 'node:test';import assert from 'node:assert/strict';import { safeUrl,publicAddress } from '../src/url-policy.js';
+const dns=async()=>['93.184.216.34'];
+test('valid public HTTPS normalized',async()=>assert.equal(await safeUrl('https://example.com',dns),'https://example.com/'));
+for(const input of ['http://example.com/','file:///etc/passwd','https://user:pass@example.com/','https://example.com:8080/','https://example.com/?key=secret','https://example.com/#token','https://localhost/','https://metadata.google.internal/','https://127.0.0.1/','https://2130706433/','https://0x7f000001/','https://[::1]/','https://192.168.1.1/','https://169.254.169.254/','https://example.local/','https://example.com\\@127.0.0.1/'])test(`blocks unsafe URL ${input}`,async()=>assert.rejects(safeUrl(input,dns)));
+test('DNS private addresses and mixed public/private answers blocked',async()=>{for(const ips of [['10.0.0.1'],['93.184.216.34','127.0.0.1'],['::ffff:127.0.0.1'],['fc00::1']])await assert.rejects(safeUrl('https://example.com/',async()=>ips));});
+test('nonpublic IPv4/IPv6 ranges',()=>{for(const ip of ['127.0.0.1','10.0.0.1','100.64.1.1','169.254.169.254','192.0.0.1','224.0.0.1','0.0.0.0','::1','2001:db8::1','fe80::1'])assert.equal(publicAddress(ip),false,ip);});

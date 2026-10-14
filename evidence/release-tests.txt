@@ -1,0 +1,462 @@
+
+> text-the-web@0.1.0 test
+> tsx --test tests/*.test.ts
+
+TAP version 13
+# (node:22005) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: help responds without using research
+ok 1 - help responds without using research
+  ---
+  duration_ms: 24.0635
+  ...
+# Subtest: URL question routes to research and one context follow-up; third needs new URL
+ok 2 - URL question routes to research and one context follow-up; third needs new URL
+  ---
+  duration_ms: 9.361375
+  ...
+# Subtest: duplicate IDs concurrently produce exactly one research and one reply
+ok 3 - duplicate IDs concurrently produce exactly one research and one reply
+  ---
+  duration_ms: 2.218458
+  ...
+# Subtest: dedup and uncertain send persist across restarts; no automatic resend
+ok 4 - dedup and uncertain send persist across restarts; no automatic resend
+  ---
+  duration_ms: 12.879083
+  ...
+# Subtest: outbound, unknown conversation and unknown sender ignored
+ok 5 - outbound, unknown conversation and unknown sender ignored
+  ---
+  duration_ms: 0.727667
+  ...
+# Subtest: rate and lifetime budget enforced before provider calls
+ok 6 - rate and lifetime budget enforced before provider calls
+  ---
+  duration_ms: 2.119625
+  ...
+# Subtest: timeouts abort provider and give a clear reply
+ok 7 - timeouts abort provider and give a clear reply
+  ---
+  duration_ms: 17.756958
+  ...
+# Subtest: clear credentials failure, no raw error
+ok 8 - clear credentials failure, no raw error
+  ---
+  duration_ms: 2.26475
+  ...
+# Subtest: clear blocked failure, no raw error
+ok 9 - clear blocked failure, no raw error
+  ---
+  duration_ms: 1.465917
+  ...
+# Subtest: clear credits failure, no raw error
+ok 10 - clear credits failure, no raw error
+  ---
+  duration_ms: 1.608583
+  ...
+# Subtest: clear unavailable failure, no raw error
+ok 11 - clear unavailable failure, no raw error
+  ---
+  duration_ms: 1.041625
+  ...
+# Subtest: clear provider_rate_limit failure, no raw error
+ok 12 - clear provider_rate_limit failure, no raw error
+  ---
+  duration_ms: 0.604417
+  ...
+# Subtest: lifetime allowance remains exhausted after a UTC day rollover
+ok 13 - lifetime allowance remains exhausted after a UTC day rollover
+  ---
+  duration_ms: 0.878625
+  ...
+# Subtest: side effects and multiple URLs rejected without research
+ok 14 - side effects and multiple URLs rejected without research
+  ---
+  duration_ms: 0.460209
+  ...
+# Subtest: expired context gives no research
+ok 15 - expired context gives no research
+  ---
+  duration_ms: 0.564084
+  ...
+# Subtest: Spectrum routing preserves IDs, sender, platform, direction; nontext ignored
+ok 16 - Spectrum routing preserves IDs, sender, platform, direction; nontext ignored
+  ---
+  duration_ms: 1.007375
+  ...
+# Subtest: uncertain send deadline does not retry on late completion or duplicate
+ok 17 - uncertain send deadline does not retry on late completion or duplicate
+  ---
+  duration_ms: 13.839208
+  ...
+# (node:22006) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: live-check honors the configured allowance before making any provider call
+ok 18 - live-check honors the configured allowance before making any provider call
+  ---
+  duration_ms: 13.412083
+  ...
+# Subtest: official SDK uses bounded documented routes, instant mode, no retries
+ok 19 - official SDK uses bounded documented routes, instant mode, no retries
+  ---
+  duration_ms: 60.394875
+  ...
+# Subtest: expired key maps to credentials and makes one HTTP attempt
+ok 20 - expired key maps to credentials and makes one HTTP attempt
+  ---
+  duration_ms: 4.353708
+  ...
+# Subtest: 503 not retried
+ok 21 - 503 not retried
+  ---
+  duration_ms: 1.280334
+  ...
+# Subtest: provider HTTP 429 is distinct from the local budget and is not retried
+ok 22 - provider HTTP 429 is distinct from the local budget and is not retried
+  ---
+  duration_ms: 3.250833
+  ...
+# Subtest: wallet missing balance prevents all billable requests
+ok 23 - wallet missing balance prevents all billable requests
+  ---
+  duration_ms: 3.8965
+  ...
+# Subtest: wallet null balance prevents all billable requests
+ok 24 - wallet null balance prevents all billable requests
+  ---
+  duration_ms: 3.618541
+  ...
+# Subtest: wallet garbage balance prevents all billable requests
+ok 25 - wallet garbage balance prevents all billable requests
+  ---
+  duration_ms: 1.275875
+  ...
+# Subtest: wallet NaN balance prevents all billable requests
+ok 26 - wallet NaN balance prevents all billable requests
+  ---
+  duration_ms: 2.489166
+  ...
+# Subtest: wallet positive infinity balance prevents all billable requests
+ok 27 - wallet positive infinity balance prevents all billable requests
+  ---
+  duration_ms: 3.079166
+  ...
+# Subtest: wallet negative infinity balance prevents all billable requests
+ok 28 - wallet negative infinity balance prevents all billable requests
+  ---
+  duration_ms: 1.370042
+  ...
+# Subtest: wallet overflow balance prevents all billable requests
+ok 29 - wallet overflow balance prevents all billable requests
+  ---
+  duration_ms: 0.993667
+  ...
+# Subtest: wallet zero string balance prevents all billable requests
+ok 30 - wallet zero string balance prevents all billable requests
+  ---
+  duration_ms: 0.573834
+  ...
+# Subtest: wallet numeric zero balance prevents all billable requests
+ok 31 - wallet numeric zero balance prevents all billable requests
+  ---
+  duration_ms: 0.830958
+  ...
+# Subtest: wallet numeric positive balance prevents all billable requests
+ok 32 - wallet numeric positive balance prevents all billable requests
+  ---
+  duration_ms: 2.36125
+  ...
+# Subtest: wallet negative string balance prevents all billable requests
+ok 33 - wallet negative string balance prevents all billable requests
+  ---
+  duration_ms: 0.487542
+  ...
+# Subtest: wallet negative number balance prevents all billable requests
+ok 34 - wallet negative number balance prevents all billable requests
+  ---
+  duration_ms: 0.778792
+  ...
+# Subtest: wallet empty balance prevents all billable requests
+ok 35 - wallet empty balance prevents all billable requests
+  ---
+  duration_ms: 0.402291
+  ...
+# Subtest: wallet whitespace balance prevents all billable requests
+ok 36 - wallet whitespace balance prevents all billable requests
+  ---
+  duration_ms: 0.481667
+  ...
+# Subtest: wallet boolean balance prevents all billable requests
+ok 37 - wallet boolean balance prevents all billable requests
+  ---
+  duration_ms: 0.7925
+  ...
+# Subtest: wallet array balance prevents all billable requests
+ok 38 - wallet array balance prevents all billable requests
+  ---
+  duration_ms: 0.532958
+  ...
+# Subtest: wallet object balance prevents all billable requests
+ok 39 - wallet object balance prevents all billable requests
+  ---
+  duration_ms: 0.734625
+  ...
+# Subtest: wallet hex balance prevents all billable requests
+ok 40 - wallet hex balance prevents all billable requests
+  ---
+  duration_ms: 0.653333
+  ...
+# Subtest: wallet exponent balance prevents all billable requests
+ok 41 - wallet exponent balance prevents all billable requests
+  ---
+  duration_ms: 0.465875
+  ...
+# Subtest: wallet trailing newline balance prevents all billable requests
+ok 42 - wallet trailing newline balance prevents all billable requests
+  ---
+  duration_ms: 0.414167
+  ...
+# Subtest: positive decimal wallet balance "37.00" permits research
+ok 43 - positive decimal wallet balance "37.00" permits research
+  ---
+  duration_ms: 2.794333
+  ...
+# Subtest: positive decimal wallet balance "0.01" permits research
+ok 44 - positive decimal wallet balance "0.01" permits research
+  ---
+  duration_ms: 2.193084
+  ...
+# Subtest: positive decimal wallet balance "37" permits research
+ok 45 - positive decimal wallet balance "37" permits research
+  ---
+  duration_ms: 3.528166
+  ...
+# Subtest: an unconfigured auto-reload state with positive credits permits research
+ok 46 - an unconfigured auto-reload state with positive credits permits research
+  ---
+  duration_ms: 4.329416
+  ...
+# Subtest: report prose removes arbitrary HTTP links regardless of case and preserves validated citations
+ok 47 - report prose removes arbitrary HTTP links regardless of case and preserves validated citations
+  ---
+  duration_ms: 2.62725
+  ...
+# Subtest: successful cited research may explain CAPTCHA, login, and access-denied errors
+ok 48 - successful cited research may explain CAPTCHA, login, and access-denied errors
+  ---
+  duration_ms: 2.562334
+  ...
+# Subtest: website challenge fails closed
+ok 49 - website challenge fails closed
+  ---
+  duration_ms: 1.574333
+  ...
+# Subtest: website login wall fails closed
+ok 50 - website login wall fails closed
+  ---
+  duration_ms: 2.090584
+  ...
+# Subtest: website timeout fails closed
+ok 51 - website timeout fails closed
+  ---
+  duration_ms: 1.221542
+  ...
+# Subtest: unsafe redirect fails closed
+ok 52 - unsafe redirect fails closed
+  ---
+  duration_ms: 2.810042
+  ...
+# Subtest: no citations fails closed
+ok 53 - no citations fails closed
+  ---
+  duration_ms: 3.056
+  ...
+# Subtest: unsafe source fails closed
+ok 54 - unsafe source fails closed
+  ---
+  duration_ms: 2.197875
+  ...
+# Subtest: enabled auto-reload fails closed
+ok 55 - enabled auto-reload fails closed
+  ---
+  duration_ms: 0.994791
+  ...
+# Subtest: unknown auto-reload fails closed
+ok 56 - unknown auto-reload fails closed
+  ---
+  duration_ms: 0.368292
+  ...
+# Subtest: pending top-up fails closed
+ok 57 - pending top-up fails closed
+  ---
+  duration_ms: 0.598625
+  ...
+# Subtest: bounded polling exhaustion makes one cancellation attempt
+ok 58 - bounded polling exhaustion makes one cancellation attempt
+  ---
+  duration_ms: 2.037959
+  ...
+# Subtest: SDK cancellation prevents research creation after interrupted fetch
+ok 59 - SDK cancellation prevents research creation after interrupted fetch
+  ---
+  duration_ms: 0.844708
+  ...
+# Subtest: SDK key serialization redacts credentials
+ok 60 - SDK key serialization redacts credentials
+  ---
+  duration_ms: 0.202833
+  ...
+# Subtest: tracked package safety patches disable internal send retries
+ok 61 - tracked package safety patches disable internal send retries
+  ---
+  duration_ms: 5.409
+  ...
+# (node:22008) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: native send diagnostics classify nested failures without exposing private error text
+ok 62 - native send diagnostics classify nested failures without exposing private error text
+  ---
+  duration_ms: 0.917041
+  ...
+# Subtest: only explicit fresh self commands are routed; peer/SMS/system/other chat/old rows rejected
+ok 63 - only explicit fresh self commands are routed; peer/SMS/system/other chat/old rows rejected
+  ---
+  duration_ms: 0.348542
+  ...
+# Subtest: self send confirms only from observed native DB row; own reply never enters command stream
+ok 64 - self send confirms only from observed native DB row; own reply never enters command stream
+  ---
+  duration_ms: 3.897667
+  ...
+# Subtest: lost native send acknowledgment becomes uncertain without another dispatch
+ok 65 - lost native send acknowledgment becomes uncertain without another dispatch
+  ---
+  duration_ms: 5.760083
+  ...
+# Subtest: bounded SDK query observes native creation missed by the ROWID watcher without resending
+ok 66 - bounded SDK query observes native creation missed by the ROWID watcher without resending
+  ---
+  duration_ms: 7.623833
+  ...
+# Subtest: accepted native creation is confirmed separately from sent flags; rejected dispatch never confirms
+ok 67 - accepted native creation is confirmed separately from sent flags; rejected dispatch never confirms
+  ---
+  duration_ms: 1.134333
+  ...
+# Subtest: real Spectrum routing + real engine process one native fixture command and suppress bot loop
+ok 68 - real Spectrum routing + real engine process one native fixture command and suppress bot loop
+  ---
+  duration_ms: 12.4825
+  ...
+# (node:22009) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: HTTP sandbox exercises help, research, duplicate, URL blocking, body/CSRF/Origin restrictions
+ok 69 - HTTP sandbox exercises help, research, duplicate, URL blocking, body/CSRF/Origin restrictions
+  ---
+  duration_ms: 201.5885
+  ...
+# Subtest: valid public HTTPS normalized
+ok 70 - valid public HTTPS normalized
+  ---
+  duration_ms: 3.269625
+  ...
+# Subtest: blocks unsafe URL http://example.com/
+ok 71 - blocks unsafe URL http://example.com/
+  ---
+  duration_ms: 0.502667
+  ...
+# Subtest: blocks unsafe URL file:///etc/passwd
+ok 72 - blocks unsafe URL file:///etc/passwd
+  ---
+  duration_ms: 0.137375
+  ...
+# Subtest: blocks unsafe URL https://user:pass@example.com/
+ok 73 - blocks unsafe URL https://user:pass@example.com/
+  ---
+  duration_ms: 0.111209
+  ...
+# Subtest: blocks unsafe URL https://example.com:8080/
+ok 74 - blocks unsafe URL https://example.com:8080/
+  ---
+  duration_ms: 0.235083
+  ...
+# Subtest: blocks unsafe URL https://example.com/?key=secret
+ok 75 - blocks unsafe URL https://example.com/?key=secret
+  ---
+  duration_ms: 0.15425
+  ...
+# Subtest: blocks unsafe URL https://example.com/\#token
+ok 76 - blocks unsafe URL https://example.com/\#token
+  ---
+  duration_ms: 0.271542
+  ...
+# Subtest: blocks unsafe URL https://localhost/
+ok 77 - blocks unsafe URL https://localhost/
+  ---
+  duration_ms: 0.206458
+  ...
+# Subtest: blocks unsafe URL https://metadata.google.internal/
+ok 78 - blocks unsafe URL https://metadata.google.internal/
+  ---
+  duration_ms: 0.782375
+  ...
+# Subtest: blocks unsafe URL https://127.0.0.1/
+ok 79 - blocks unsafe URL https://127.0.0.1/
+  ---
+  duration_ms: 1.166083
+  ...
+# Subtest: blocks unsafe URL https://2130706433/
+ok 80 - blocks unsafe URL https://2130706433/
+  ---
+  duration_ms: 1.589792
+  ...
+# Subtest: blocks unsafe URL https://0x7f000001/
+ok 81 - blocks unsafe URL https://0x7f000001/
+  ---
+  duration_ms: 0.523791
+  ...
+# Subtest: blocks unsafe URL https://[::1]/
+ok 82 - blocks unsafe URL https://[::1]/
+  ---
+  duration_ms: 0.152833
+  ...
+# Subtest: blocks unsafe URL https://192.168.1.1/
+ok 83 - blocks unsafe URL https://192.168.1.1/
+  ---
+  duration_ms: 0.129625
+  ...
+# Subtest: blocks unsafe URL https://169.254.169.254/
+ok 84 - blocks unsafe URL https://169.254.169.254/
+  ---
+  duration_ms: 0.124166
+  ...
+# Subtest: blocks unsafe URL https://example.local/
+ok 85 - blocks unsafe URL https://example.local/
+  ---
+  duration_ms: 0.095709
+  ...
+# Subtest: blocks unsafe URL https://example.com\\@127.0.0.1/
+ok 86 - blocks unsafe URL https://example.com\\@127.0.0.1/
+  ---
+  duration_ms: 0.154
+  ...
+# Subtest: DNS private addresses and mixed public/private answers blocked
+ok 87 - DNS private addresses and mixed public/private answers blocked
+  ---
+  duration_ms: 5.1945
+  ...
+# Subtest: nonpublic IPv4/IPv6 ranges
+ok 88 - nonpublic IPv4/IPv6 ranges
+  ---
+  duration_ms: 0.507542
+  ...
+1..88
+# tests 88
+# suites 0
+# pass 88
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2356.94525
