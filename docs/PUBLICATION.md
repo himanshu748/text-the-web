@@ -11,9 +11,11 @@ Asia/Kolkata, with the video, a redacted demo cover image, and official TinyFish
 and Photon company tags. It is not yet a public LinkedIn post.
 
 The Photon bounty has been claimed, but final submission is pending the public
-LinkedIn link and verification of the Discord showcase. A one-time follow-up is
-scheduled for 15 October at 10:05 AM local time. A Discord Post click had an
-uncertain outcome when Comet became unresponsive; inspect before retrying.
+LinkedIn link and the Discord showcase permalink. A one-time follow-up is
+scheduled for 15 October at 10:05 AM local time. Comet became
+unresponsive after the Discord Post click. The user subsequently confirmed the
+new showcase thread is visible; its permalink still needs to be collected. Do
+not create a duplicate.
 
 Earlier documents preserve historical approval and verification snapshots.
 Publication and submission have since been authorized by the user. No additional
