@@ -1,15 +1,26 @@
 # Publication status — 14 October 2026
 
-The user authorized publishing the sanitized build and demo and submitting the
-Photon × TinyFish bounty. The Photon bounty was claimed on 14 October.
-LinkedIn is being scheduled for 15 October at 10:00 a.m. Asia/Kolkata.
-Final submission will wait for the actual public LinkedIn post link. Earlier
-documents preserve the approval gates and historical verification snapshots.
+The reviewed source and redacted evidence are public at
+https://github.com/himanshu748/text-the-web.
 
-No additional research requests, purchases, top-ups or paid deployment are
-authorized by publication. All existing research allowances are exhausted.
+The real 60-second Mac iMessage demo is published on X:
+https://x.com/jhahimanshu653/status/2110364930289582418.
 
-This repository contains the reviewed public source and redacted evidence only.
-Credentials, private screenshots, chat data, budget databases and unrelated
-projects are excluded. The packaged release manifest was omitted because this
-public copy replaces machine-specific launcher paths with portable commands.
+LinkedIn confirms a native scheduled post for 15 October 2026 at 10:00 AM
+Asia/Kolkata, with the video, a redacted demo cover image, and official TinyFish
+and Photon company tags. It is not yet a public LinkedIn post.
+
+The Photon bounty has been claimed, but final submission is pending the public
+LinkedIn link and verification of the Discord showcase. A one-time follow-up is
+scheduled for 15 October at 10:05 AM local time. A Discord Post click had an
+uncertain outcome when Comet became unresponsive; inspect before retrying.
+
+Earlier documents preserve historical approval and verification snapshots.
+Publication and submission have since been authorized by the user. No additional
+research, purchases, top-ups or paid deployment are authorized. Research request
+allowances are exhausted.
+
+This repository contains reviewed source and redacted evidence only. Credentials,
+private screenshots, chat data, budget databases and unrelated projects are
+excluded. The release manifest was omitted because this public copy replaces
+machine-specific launcher paths with portable commands.
