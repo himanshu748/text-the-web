@@ -1,28 +1,22 @@
-# Publication status — 14 October 2026
+# Publication and submission status — 15 October 2026
 
-The reviewed source and redacted evidence are public at
-https://github.com/himanshu748/text-the-web.
+Text the Web was submitted exactly once to **Build Your Own AI Assistant on
+iMessage**. TinyBounties displayed “Bounty submitted” and its claim card shows
+**IN REVIEW**, submitted 15 October 2026. This does not mean approval or payment.
 
-The real 60-second Mac iMessage demo is published on X:
-https://x.com/jhahimanshu653/status/2110364930289582418.
+- Source: https://github.com/himanshu748/text-the-web
+- LinkedIn demo: https://www.linkedin.com/feed/update/urn:li:activity:7516355087875784704/
+- X demo: https://x.com/jhahimanshu653/status/2110364930289582418
+- Discord showcase: https://discord.com/channels/1200506685236711554/1559927952404385792
 
-LinkedIn confirms a native scheduled post for 15 October 2026 at 10:00 AM
-Asia/Kolkata, with the video, a redacted demo cover image, and official TinyFish
-and Photon company tags. It is not yet a public LinkedIn post.
+The portal includes the redacted 60-second native iMessage video and follow-up
+screenshot. Fetch was the only selected scoring endpoint; Research beta scoring
+is unconfirmed. Submitted notes preserve the Mac same-account test scope,
+user-confirmed iPad replies, untested independent-peer/cloud integration, and one
+uncertain acknowledgment despite visible delivery that was not retried.
 
-The Photon bounty has been claimed, but final submission is pending the public
-LinkedIn link and the Discord showcase permalink. A one-time follow-up is
-scheduled for 15 October at 10:05 AM local time. Comet became
-unresponsive after the Discord Post click. The user subsequently confirmed the
-new showcase thread is visible; its permalink still needs to be collected. Do
-not create a duplicate.
-
-Earlier documents preserve historical approval and verification snapshots.
-Publication and submission have since been authorized by the user. No additional
-research, purchases, top-ups or paid deployment are authorized. Research request
-allowances are exhausted.
-
-This repository contains reviewed source and redacted evidence only. Credentials,
-private screenshots, chat data, budget databases and unrelated projects are
-excluded. The release manifest was omitted because this public copy replaces
-machine-specific launcher paths with portable commands.
+Earlier docs preserve historical verification and approval snapshots. The user
+authorized publication, claiming and final submission. No additional research,
+purchases, top-ups or paid deployment were performed. Research allowances remain
+exhausted. This repository excludes credentials, private screenshots, Messages
+data, budget databases and unrelated projects.
